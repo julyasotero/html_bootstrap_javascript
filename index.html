@@ -1,155 +1,50 @@
 <!doctype html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 
     <title>BlueEz!</title>
+
+    <!-- Latest compiled and minified CSS -->
+
+
 </head>
 
 <body>
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-        crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-        crossorigin="anonymous"></script>
-
-
-
-    <div class="card">
-        <div class="card-header">
-            Parceiros
-        </div>
-    </div>
-
-    <!-- Botao criar -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#criar">Criar</button>
-
-    <!-- Modal Criar -->
-    <div class="modal fade" id="criar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Criar parceiro</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label>Nome parceiro</label>
-                                <input type="text" class="form-control" placeholder="Informar nome" id="nome_parceiro">
-                            </div>
-
-                            <div class="col-lg-4">
-                                <label>Data cadastro</label>
-                                <input type="text" class="form-control" placeholder="DD/MM/AAAA" id="data_cadastro">
-                            </div>
-
-                            <div class="col-lg-4">
-                                <label>Data fim</label>
-                                <input type="text" class="form-control" placeholder="DD/MM/AAAA" id="data_fim">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary" onclick="alert('cadastro inserido com sucesso')">OK</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Botao editar -->
-    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#editar">Editar</button>
-    
-    <!-- Modal Editar -->
-    <div class="modal fade" id="editar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-        aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel">Editar parceiro</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                    </button>
-                </div>
-                <div class="modal-body">
-
-                    <div class="card-body">
-                        <div class="row">
-                            <div class="col-lg-4">
-                                <label>Nome parceiro</label>
-                                <input type="text" class="form-control" placeholder="Informar nome" id="nome_parceiro">
-                            </div>
-
-                            <div class="col-lg-4">
-                                <label>Data cadastro</label>
-                                <input type="text" class="form-control" placeholder="DD/MM/AAAA" id="data_cadastro">
-                            </div>
-
-                            <div class="col-lg-4">
-                                <label>Data fim</label>
-                                <input type="text" class="form-control" placeholder="DD/MM/AAAA" id="data_fim">
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Fechar</button>
-                    <button type="button" class="btn btn-primary" onclick="alert('cadastro editado com sucesso')">OK</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <table class="table">
-        <thead>
-          <tr>
-            <th scope="col">ID</th>
-            <th scope="col">Parceiro</th>
-            <th scope="col">Data do cadastro</th>
-            <th scope="col">Data fim</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <th scope="row">1</th>
-            <td>Six consult</td>
-            <td>15/09/2020</td>
-            <td>11/10/2021</td>
-          </tr>
-          <tr>
-            <th scope="row">2</th>
-            <td>July modas</td>
-            <td>09/02/1999</td>
-            <td>19/11/2021</td>
-          </tr>
-          <tr>
-            <th scope="row">3</th>
-            <td>Artsu jiu jitsu</td>
-            <td>27/09/2020</td>
-            <td>17/10/2021</td>
-          </tr>
-        </tbody>
-      </table>
+    <div id="componente"></div>
 </body>
 
+<script src="modal.js"></script>
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+<!-- Popper JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<script>
+
+    async function Start() {
+        let modal = new Modal("edicao")
+
+        console.log(modal);
+
+        await modal.Iniciar()
+
+        //$("#componente").html(modal.html)
+
+    }
+
+    Start()
+
+</script>
 
 </html>

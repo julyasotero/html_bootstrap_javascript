@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "nome_parceiro": "Six Consult 01",
+        "data_cadastro": "2021-11-29 22:28:00",
+        "data_fim": null
+    },
+    {
+        "id": 2,
+        "nome_parceiro": "Six Consult 02",
+        "data_cadastro": "2021-11-29 22:28:00",
+        "data_fim": null
+    },
+    {
+        "id": 3,
+        "nome_parceiro": "Six Consult 03",
+        "data_cadastro": "2021-11-29 22:28:00",
+        "data_fim": null
+    }
+]
